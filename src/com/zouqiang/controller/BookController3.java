@@ -33,7 +33,7 @@ public class BookController3 {
     Book2 readXml() throws JAXBException, FileNotFoundException {
         JAXBContext context = JAXBContext.newInstance(Book2.class);
         Unmarshaller unmar = context.createUnmarshaller();
-        File file = new File("D:/workspaces/YxWebServer/WebRoot/book.xml");
+        File file = new File("D:/Git Project/YxWebServer/WebRoot/book.xml");
         InputStream is = new FileInputStream(file);
         Book2 book3 = (Book2) unmar.unmarshal(is);
         Log4j2.logger.info(book3);
