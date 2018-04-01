@@ -4,36 +4,35 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>注册页面</title>
+    <title>测试errors标签</title>
 </head>
 <body>
-<h2>注册页面</h2>
-<form:form method="post" action="register" modelAttribute="user">
+<h2>选择部门</h2>
+<form:form method="post" action="register" modelAttribute="user4">
     <table>
         <tr>
             <td>姓名：</td>
             <td><form:input path="username"/></td>
+            <td><span style="color: red"><form:errors path="username"/></span></td>
         </tr>
         <tr>
-            <td>性別：</td>
+            <td>性别：</td>
             <td><form:input path="sex"/></td>
+            <td><span style="color: red"><form:errors path="sex"/></span></td>
         </tr>
         <tr>
             <td>年龄：</td>
             <td><form:input path="age"/></td>
+            <td><span style="color: red"><form:errors path="age"/></span></td>
         </tr>
         <tr>
             <td>密码：</td>
             <td><form:password path="password"/></td>
+            <td><span style="color: red"><form:errors path="password"/></span></td>
         </tr>
-        <%--<tr>--%>
-            <%--<td>hidden标签：</td>--%>
-            <%--<td><form:hidden path="id"/></td>--%>
-        <%--</tr>--%>
-        <%--<tr>--%>
-            <%--<td>个性签名：</td>--%>
-            <%--<td><form:textarea path="remark" rows="5" cols="20"/></td>--%>
-        <%--</tr>--%>
+        <tr>
+            <td><input type="submit" value="提交"/></td>
+        </tr>
     </table>
 </form:form>
 </body>

@@ -1,23 +1,13 @@
 package com.zouqiang.entity;
 
-import java.io.Serializable;
-
-public class User2 implements Serializable {
+public class User4 {
     private String username;
     private String sex;
-    private String age;
+    private Integer age;
     private String password;
 
-    public User2() {
+    public User4() {
         super();
-    }
-
-    public User2(String username, String sex, String age,String password) {
-        super();
-        this.username = username;
-        this.sex = sex;
-        this.age = age;
-        this.password=password;
     }
 
     public String getUsername() {
@@ -36,11 +26,11 @@ public class User2 implements Serializable {
         this.sex = sex;
     }
 
-    public String getAge() {
+    public Integer getAge() {
         return age;
     }
 
-    public void setAge(String age) {
+    public void setAge(Integer age) {
         this.age = age;
     }
 
@@ -54,10 +44,10 @@ public class User2 implements Serializable {
 
     @Override
     public String toString() {
-        return "User2{" +
+        return "User4{" +
                 "username='" + username + '\'' +
                 ", sex='" + sex + '\'' +
-                ", age='" + age + '\'' +
+                ", age=" + age +
                 ", password='" + password + '\'' +
                 '}';
     }

@@ -20,18 +20,6 @@
         </webroots>
       </configuration>
     </facet>
-    <facet type="Spring" name="Spring">
-      <configuration>
-        <fileset id="fileset" name="Spring Application Context" removed="false">
-          <file>file://$MODULE_DIR$/classes/artifacts/YxWebServer_Web_exploded/WEB-INF/spring-mvc.xml</file>
-          <file>file://$MODULE_DIR$/WebRoot/WEB-INF/spring-mvc.xml</file>
-          <file>file://$MODULE_DIR$/classes/artifacts/YxWebServer_Web_exploded/WEB-INF/lib/spring-mvc.xml</file>
-          <file>file://$MODULE_DIR$/classes/artifacts/YxWebServer_Web_exploded/WEB-INF/spring-mybatis.xml</file>
-          <file>file://$MODULE_DIR$/classes/artifacts/YxWebServer_Web_exploded/WEB-INF/lib/spring-mybatis.xml</file>
-          <file>file://$MODULE_DIR$/WebRoot/WEB-INF/spring-mybatis.xml</file>
-        </fileset>
-      </configuration>
-    </facet>
     <facet type="web" name="Web2">
       <configuration>
         <descriptors>
@@ -40,6 +28,18 @@
         <webroots>
           <root url="file://$MODULE_DIR$/classes/artifacts/YxWebServer_Web_exploded" relative="/" />
         </webroots>
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration>
+        <fileset id="fileset" name="Spring Application Context" removed="false">
+          <file>file://$MODULE_DIR$/classes/artifacts/YxWebServer_Web_exploded/WEB-INF/lib/spring-mvc.xml</file>
+          <file>file://$MODULE_DIR$/WebRoot/WEB-INF/spring-mvc.xml</file>
+          <file>file://$MODULE_DIR$/classes/artifacts/YxWebServer_Web_exploded/WEB-INF/spring-mvc.xml</file>
+          <file>file://$MODULE_DIR$/classes/artifacts/YxWebServer_Web_exploded/WEB-INF/lib/spring-mybatis.xml</file>
+          <file>file://$MODULE_DIR$/WebRoot/WEB-INF/spring-mybatis.xml</file>
+          <file>file://$MODULE_DIR$/classes/artifacts/YxWebServer_Web_exploded/WEB-INF/spring-mybatis.xml</file>
+        </fileset>
       </configuration>
     </facet>
   </component>
@@ -51,7 +51,7 @@
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="jdk" jdkName="1.8" jdkType="JavaSDK" />
-    <orderEntry type="module-library" exported="" scope="TEST">
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
           <root url="file://$MODULE_DIR$/WebRoot/WEB-INF/lib" />
@@ -61,15 +61,6 @@
         <jarDirectory url="file://$MODULE_DIR$/WebRoot/WEB-INF/lib" recursive="false" />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="file://$MODULE_DIR$/WebRoot/WEB-INF/lib" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-        <jarDirectory url="file://$MODULE_DIR$/WebRoot/WEB-INF/lib" recursive="false" />
-      </library>
-    </orderEntry>
+    <orderEntry type="library" name="lib" level="project" />
   </component>
 </module>
