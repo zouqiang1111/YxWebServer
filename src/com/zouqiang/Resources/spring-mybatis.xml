@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <settings>
+        <setting name="logImpl" value="Log4j2"/>
+        <!--使用延迟加载生效必须配置以下两个属性-->
+        <setting name="lazyLoadingEnabled" value="true"/>
+        <setting name="aggressiveLazyLoading" value="false"/>
+    </settings>
+    <environments default="sqlserver">
+        <environment id="sqlserver">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+                <property name="url" value="jdbc:sqlserver://127.0.0.1;databaseName=YXHIS"/>
+                <property name="username" value="sa"/>
+                <property name="password" value="123qwe,."/>
+            </dataSource>
+        </environment>
+    </environments>
+    <mappers>
+        <mapper resource="PersonMapper.xml"/>
+        <mapper resource="CardMapper.xml"/>
+        <mapper resource="ClazzMapper.xml"/>
+        <mapper resource="StudentMapper.xml"/>
+    </mappers>
+</configuration>

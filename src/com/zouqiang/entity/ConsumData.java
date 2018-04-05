@@ -42,6 +42,10 @@ public class ConsumData {
     @JSONField(ordinal = 17)
     private String cdMaker;// 开单人
 
+    public ConsumData() {
+        super();
+    }
+
     public String getPatientId() {
         return patientId;
     }
